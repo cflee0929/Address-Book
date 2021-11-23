@@ -129,7 +129,7 @@ node *addressbook::find_parent(char *find_name, int *pos){
     node *ptr;
     node *parent;
 
-    ptr = root;
+    ptr = parent = root; //find from root
     *pos = 0;
     while(ptr!=NULL){
         //parent = ptr; **bug**
